@@ -36,6 +36,6 @@ public class WebServerApplication {
   @PostMapping("/postMessage")
   public void messageHandler(@RequestParam("message") String message) {
     source.output().send(new GenericMessage<>(
-        new Message("me@joao.ninja", message, LocalDateTime.now())));
+        new Message("user", message, LocalDateTime.now())));
   }
 }
