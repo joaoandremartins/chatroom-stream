@@ -5,10 +5,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@EnableBinding(SinkController.class)
+@EnableBinding(Sink.class)
 public class SinkController {
 
   private static final Log LOGGER = LogFactory.getLog(SinkController.class);
